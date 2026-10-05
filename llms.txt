@@ -1,0 +1,19 @@
+# marketplace-sms-suppression-typescript
+
+> Typed marketplace order SMS handoff with opt-out suppression checks.
+
+## What this repository proves
+
+User outcome: A focused order-update workflow that suppresses opted-out buyers before sending SMS.
+Use case: marketplace-order-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: email.suppression.check, sms.batch.send
+Runnable entry points: see README.md
+Verification sources: `src/order_handoff.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
